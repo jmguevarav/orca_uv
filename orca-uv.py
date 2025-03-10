@@ -179,7 +179,7 @@ try:
                     #only recognize lines that start with number
                     #split line into 2 lists energy, intensities
                     #line should start with a number
-                    if re.search("\d\s{1,}\d",line): 
+                    if re.search(r"\d\s{1,}\d",line): 
                         energylist.append(float(line.strip().split()[energy_column]))
                         intenslist.append(float(line.strip().split()[intens_column]))
                         
